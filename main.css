@@ -1,14 +1,13 @@
 html,
 body {
     margin: 0;
-    overflow: scroll;
-    height: 100%;
+    
     font-family: Verdana, Arial, Sans-serif;
 }
-svg {
+/*svg {
     width: 2480px;
     height: 1748px;
-}
+}*/
 line {
     stroke-width: 3px;
     stroke: red;
@@ -17,7 +16,7 @@ line {
 rect {
     stroke-width: 3px;
     fill:none;
-    stroke: red;
+    /*stroke: red;*/
 }
 .mapcontour {
     border: none;
@@ -28,8 +27,8 @@ rect {
 
 .explainer {
     padding: 1rem;
-    background-color: #0E131F;
-    color: #F7EBEC;
+    background-color: #143642;
+    color: #DAD2D8;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -41,13 +40,9 @@ rect {
 
 button{
     padding: 1rem;
-    background-color:#C5D86D;
+    background-color:#A8201A;
+    color: #DAD2D8;
     border: none;
-}
-
-button.reset{
-    background-color: #9D3F42;
-    color: #F7EBEC;
 }
 
 button.hidden{
@@ -56,6 +51,11 @@ button.hidden{
 
 @media print {
     .dont_print{
+        display: none !important;
+    }
+}
+@media screen {
+    .print_only{
         display: none !important;
     }
 }

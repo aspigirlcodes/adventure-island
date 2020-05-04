@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=.5, maximum-scale=12.0, minimum-scale=.25">
+
+    <title>test print svg</title>
+
+    <link rel="stylesheet" href="main.css" type="text/css">
+    
+  </head>
+  <body>
+    <svg viewBox="0 0 975 620" width="975" height="620" >
+        <rect x="0" y="0" width="975" height="620" stroke="red"/>
+        <rect x="975" y="0" width="975" height="620" stroke="blue"/>
+        <rect x="0" y="620" width="975" height="620" stroke="green"/>
+        <rect x="975" y="620" width="975" height="620" stroke="yellow"/>
+    </svg>
+    <svg viewBox="975 0 975 620" width="975" height="620" >
+        <rect x="0" y="0" width="975" height="620" stroke="red"/>
+        <rect x="975" y="0" width="975" height="620" stroke="blue"/>
+        <rect x="0" y="620" width="975" height="620" stroke="green"/>
+        <rect x="975" y="620" width="975" height="620" stroke="yellow"/>
+    </svg>
+    <svg viewBox="0 620 975 620" width="975" height="620" >
+        <rect x="0" y="0" width="975" height="620" stroke="red"/>
+        <rect x="975" y="0" width="975" height="620" stroke="blue"/>
+        <rect x="0" y="620" width="975" height="620" stroke="green"/>
+        <rect x="975" y="620" width="975" height="620" stroke="yellow"/>
+    </svg>
+    <svg viewBox="975 620 975 620" width="975" height="620" >
+        <rect x="0" y="0" width="975" height="620" stroke="red"/>
+        <rect x="975" y="0" width="975" height="620" stroke="blue"/>
+        <rect x="0" y="620" width="975" height="620" stroke="green"/>
+        <rect x="975" y="620" width="975" height="620" stroke="yellow"/>
+    </svg>
+    <script>
+
+        var svg = document.getElementById("svg")
+        
+
+        function drawcircle(position){
+            var circle = document.createElementNS('http://www.w3.org/2000/svg','circle');
+            circle.setAttribute('cx', position.x)
+            circle.setAttribute('cy', position.y)
+            circle.setAttribute('r', 10)
+            svg.append(circle)
+        }
+
+        function drawRectangle(rect){
+            var circle = document.createElementNS('http://www.w3.org/2000/svg','rect');
+            circle.setAttribute('x', rect.topLeft.x)
+            circle.setAttribute('y', rect.topLeft.y)
+            circle.setAttribute('width', rect.width)
+            circle.setAttribute('height', rect.height)
+            circle.setAttribute('r', 10)
+            svg.append(circle)
+        }
+
+    </script>
+  </body>
+</html>

@@ -37,6 +37,20 @@ rect {
 .explainer span{
     padding: 0.5rem;
 }
+.explainer a{
+    color: #DAD2D8;
+}
+
+.p-1{
+    padding: 0.5rem;
+}
+
+.flexparent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
 
 button{
     padding: 1rem;

@@ -1,7 +1,9 @@
 html,
 body {
     margin: 0;
-    
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
     font-family: Verdana, Arial, Sans-serif;
 }
 /*svg {
@@ -11,6 +13,11 @@ body {
 line {
     stroke-width: 3px;
     stroke: red;
+}
+
+line.cutline{
+    stroke-width: 1px;
+    stroke: grey;
 }
 
 rect {
@@ -50,6 +57,13 @@ rect {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
+}
+
+.container{
+    margin: 0 20%;
+}
+.content{
+    overflow: auto;
 }
 
 button{
